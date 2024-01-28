@@ -7,6 +7,13 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+svg {
+    position: relative;
+    width: 1106px;
+    height: 610px;
+    flex-shrink: 0;
+}
+
 .nav {
     display: flex;
     background-color: #f1f1f1;
@@ -54,12 +61,12 @@ nav ul {
 }
 
 header {
-    background: linear-gradient(#a551a941,
-    #A451A9), 
-    url(img/bgp.jpg);
-    background-size: cover;
+    background:linear-gradient(to left, rgba(114, 14, 119, 0.774), #f2921d34),
+    url(img/bgp.png), url(img/bg.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
-    color: aliceblue;
+    background-position: right, right, left;
+    color: #F2921D;
 }
 
 header h1 {
@@ -149,30 +156,18 @@ footer {
         width: 100%;
     }
     .header__div--titulo {
-        width: 100%;
+        display: grid;
+        justify-content: right;
         text-align: left;
+        width: 100%;
         font-size: 25px;
         margin: 8% 5% 10% 5%;
     }
-    .header__button {
-        width: 60%;
-        font-size: 25px;
-        text-align: center;
-        letter-spacing: 3px;
-        transition: all .5s ease 0s;
-        margin: 20% 0%;
-    }
-    .header__button:hover {
-        transform: scale(1.05);
-        transition: all .5s ease 0s;
-    }
-
     .div__p--definition {
         font-size: 24px;
         margin-right: 2em;
         width: 40rem;
     }
-
     .div__p--texto {
         font-size: 24px;
         width: 48rem;
