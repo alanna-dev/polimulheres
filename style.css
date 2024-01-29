@@ -14,7 +14,7 @@ svg {
     flex-shrink: 0;
 }
 
-.nav {
+nav {
     display: flex;
     background-color: #f1f1f1;
     width: 100%;
@@ -23,8 +23,8 @@ svg {
     align-items: center;
 }
 
-.nav__div {
-    display: flex;
+.nav__div__img {
+    display: none;
 }
 
 .nav__img {
@@ -32,40 +32,23 @@ svg {
     margin-left: 1em;
 }
 
-li > a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #232323;
-    font-weight: bold;
-    margin-right: 36px;
+.nav__img--menu {
+    width: 40px;
+    margin-right: 24px;
 }
 
-li > a:hover {
-    font-weight: lighter;
-}
-
-nav li {
+.nav__div {
     display: flex;
-    list-style: none;
-    margin-right: 1em;
 }
 
 nav ul {
-    display: block;
-}
-
-.nav-lista-container {
-    width: 360px;
-    min-width: 300px;
+    display: none;
 }
 
 header {
-    background:linear-gradient(to left, rgba(114, 14, 119, 0.774), #f2921d34),
-    url(img/bgp.png), url(img/bg.jpg);
-    background-size: contain;
+    background: linear-gradient(to top, rgb(113, 10, 118), #a551a994), url(img/bg2.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right, right, left;
     color: #F2921D;
 }
 
@@ -87,21 +70,37 @@ header h1 {
 
 .div__p--definition {
     display: flex;
+    font-weight: bold;
     text-align: justify;
-    margin: 30px 0px;
+    margin: 24px 0px;
     line-height: 24px;
 }
 
 .div__p--texto {
     display: flex;
     text-align: justify;
-    margin: 0px 0px 32px 0px;
+    margin: 0px 40px 32px 40px;
     line-height: 24px;
 }
 
 section {
     background-color: #f1f1f1;
     color: #A451A9;
+}
+
+.section--about {
+    background: linear-gradient(to top, #f2f2f2, #f2f2f2d1), url(img/simbolo-poli-mulheres-lilás.png);
+    background-size: 14%;
+    background-repeat: repeat;
+    background-position: center;
+    padding-bottom: 64px;
+}
+
+.section--creators {
+    background: url(img/bgl.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f2f2f2;
 }
 
 .section__h2--about {
@@ -116,12 +115,38 @@ section {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin: 0px 20px;
+}
+
+.section__div--creators {
+    padding-bottom: 48px;
+}
+
+.div--creator {
+    text-align: center;
+}
+
+.div--creator img {
+    margin-bottom: 16px;
+}
+
+.div--creator h2 {
+    margin-bottom: 16px;
+}
+
+.div--creator p {
+    margin: 0px 40px 16px 40px;
+    text-align: justify;
+}
+
+.img--creator {
+    width: 14rem;
+    border-radius: 100%;
+    margin-top: 16px;
 }
 
 footer {
     background-color: #A451A9;
-    color: white;
+    color: #f1f1f1;
     text-align: center;
     padding-top: 10px;
 }
@@ -139,16 +164,46 @@ footer {
     .nav {
         height: 80px;
     }
+    .nav__div__img--mobile {
+        display: none;
+    }
+    .nav__div__img {
+        display: flex;
+    }
     .nav__img {
-        width: 60px;
+        width: 80px;
         padding-top: 1px;
+    }
+    .nav__div--menu {
+        display: none;
     }
     nav ul {
         display: flex;
         justify-content: space-around;
     }
+    nav li {
+        display: flex;
+        list-style: none;
+        margin-right: 1em;
+    }
+    li > a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #232323;
+        font-weight: bold;
+        margin-right: 36px;
+    }
+    
+    li > a:hover {
+        font-weight: lighter;
+    }
     header {
         display: flex;
+        background: linear-gradient(to left, rgb(113, 10, 118), #a551a962), url(img/bg2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #F2921D;
     }
     .header__div--container {
         display: flex;
@@ -161,15 +216,37 @@ footer {
         text-align: left;
         width: 100%;
         font-size: 25px;
-        margin: 8% 5% 10% 5%;
+        margin: 8% 1% 7% 5%;
     }
     .div__p--definition {
-        font-size: 24px;
-        margin-right: 2em;
-        width: 40rem;
+        font-size: 32px;
+        margin-right: 0px;
+        width: 48rem;
+        line-height: normal;
+        text-align: unset;
+    }
+    .section__div--content {
+        margin: 0px 120px;
+    }
+    .section__h2--about {
+        padding-top: 56px;
     }
     .div__p--texto {
         font-size: 24px;
-        width: 48rem;
+        margin: 24px;
+    }
+    .section__div--creators {
+        display: flex;
+        margin: 0px 120px;
+    }
+    .div--creator {
+        margin: 0px;
+    }
+    .div--creator p {
+        margin: 24px;
+        text-align: justify;
+    }
+    .img--creator {
+        width: 10rem;
     }
 }
