@@ -4,7 +4,7 @@
 }
 body {
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 svg {
@@ -65,19 +65,18 @@ header {
     width: 80%;
     text-align: center;
     font-size: 16px;
-    margin: 8% 10% 8% 10%;
+    margin: 8% 10%;
 }
 
 .div__p--definition {
     display: flex;
-    font-weight: bold;
     text-align: justify;
     margin: 8px 0px 24px 0px;
     line-height: 24px;
 }
 
 .section--about {
-    background: linear-gradient(to top, #f1f1f1, #f1f1f1), url(img/simbolo-poli-mulheres-lilás.png);
+    background: linear-gradient(to top, #f1f1f1dc, #f1f1f1), url(img/simbolo-poli-mulheres-lilás.png);
     background-size: 14%;
     background-repeat: repeat;
     background-position: center;
@@ -86,16 +85,15 @@ header {
 }
 
 .section--creators {
-    background: url(img/bgl.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #f2f2f2;
+    color: #A451A9;
 }
 
 .section__h2--about {
-    padding-top: 48px;
-    padding-bottom: 15px;
-    font-size: 2rem;
+    padding: 48px 0px;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -128,6 +126,46 @@ header {
     font-size: 16px;
 }
 
+.div--container--app {
+    display: grid;
+    justify-content: center;
+    background-color: #A451A9;
+    padding: 30px;
+    color: #f1f1f1;
+}
+
+.div--text--app {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.div--text--app p {
+    margin-bottom: 24px;
+}
+
+.div__button--app {
+    width: 110px;
+    height: 32px;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    color: #F2921D;
+    font-weight: bold;
+    border-radius: 24px;
+    border-style: none;
+}
+
+.div--img--app {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0px;
+}
+
+.img--app {
+    max-width: 250px;
+}
+
 .section__div--creators {
     padding-bottom: 48px;
 }
@@ -147,7 +185,6 @@ header {
 .div--creator p {
     margin: 0px 40px 16px 40px;
     text-align: justify;
-    font-weight: bold;
 }
 
 .img--creator {
@@ -229,7 +266,7 @@ footer {
         display: grid;
         text-align: left;
         width: auto;
-        margin: 7% 5% 7% 5%;
+        margin: 7% 5%;
         padding: 3%;
 
         background: rgba(255, 255, 255, 0.100);
