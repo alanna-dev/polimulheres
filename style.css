@@ -317,6 +317,26 @@ footer {
     .div__p--texto {
         font-size: 20px;
     }
+    .div--container--app {
+        display: flex;
+    }
+    .div--text--app {
+        width: 48rem;
+        padding: 0rem 6rem;
+        text-align: left;
+        align-items: center;
+        height: 24rem;
+    }
+    .div__button--app {
+        width: 180px;
+        height: 48px;
+        font-size: 24px;
+        transition: background-color 0.5s;
+    }
+    .div__button--app:hover {
+        background-color: #F2921D;
+        color: #f1f1f1;
+    }
     .section__div--creators {
         display: flex;
         margin: 0px 120px;
