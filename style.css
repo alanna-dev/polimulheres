@@ -110,21 +110,26 @@ header {
 
 .div--card {
     display: flex;
+    flex-wrap: wrap;
     background-color: #A451A9;
     color: #f1f1f1;
     max-width: 28rem;
     height: 10rem;
     margin: 20px;
     border-radius: 10px;
-    justify-content: center;
-    text-align: center;
+}
+
+.div--card h2 {
+    display: flex;
     align-items: center;
+    padding-left: 24px;
 }
 
 .div__p--texto {
     display: flex;
     line-height: 24px;
     font-size: 16px;
+    padding: 0px 24px;
 }
 
 .div--container--app {
