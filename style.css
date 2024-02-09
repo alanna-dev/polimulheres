@@ -110,22 +110,23 @@ header {
     background-color: #A451A9;
     color: #f1f1f1;
     max-width: 28rem;
-    height: 10rem;
     margin: 20px;
     border-radius: 10px;
 }
 
 .div--card h2 {
     display: flex;
-    align-items: center;
-    padding-left: 24px;
+    height: 48px;
+    align-items: end;
+    padding: 0px 24px 24px 24px;
 }
 
 .div__p--texto {
     display: flex;
     line-height: 24px;
     font-size: 16px;
-    padding: 0px 24px;
+    padding: 0px 24px 24px 24px;
+    min-height: 120px;
 }
 
 .div--container--app {
@@ -293,6 +294,7 @@ footer {
     }
     .section__h2--about {
         padding-top: 56px;
+        font-size: 48px;
     }
     .div--cards {
         display: flex;
@@ -302,9 +304,14 @@ footer {
         background-color: #A451A9;
         color: #f1f1f1;
         width: 16rem;
-        height: 16rem;
         margin: 20px;
         border-radius: 10px;
+    }
+    .div--card h2 {
+        font-size: 26px;
+    }
+    .div__p--texto {
+        font-size: 20px;
     }
     .section__div--creators {
         display: flex;
