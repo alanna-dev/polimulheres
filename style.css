@@ -104,10 +104,6 @@ header {
     flex-wrap: wrap;
 }
 
-.div--cards {
-    display: table;
-}
-
 .div--card {
     display: flex;
     flex-wrap: wrap;
@@ -289,13 +285,26 @@ footer {
         text-align: unset;
     }
     .section__div--content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
         margin: 0px 200px;
     }
     .section__h2--about {
         padding-top: 56px;
     }
     .div--cards {
-        display: table;
+        display: flex;
+    }
+    .div--card {
+        display: flex;
+        background-color: #A451A9;
+        color: #f1f1f1;
+        width: 16rem;
+        height: 16rem;
+        margin: 20px;
+        border-radius: 10px;
     }
     .section__div--creators {
         display: flex;
